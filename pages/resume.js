@@ -50,12 +50,14 @@ const Resume = () => {
       <Head>
         <title>{data.name}&apos;s Resume</title>
       </Head>
+      {/* Print-only PDF for Cmd/Ctrl+P */}
+      <iframe
+        src="/Rishi_Chhabra_Resume.pdf"
+        title="Printable Resume PDF"
+        className="hidden print:block w-screen h-screen border-0"
+      />
       {data.showCursor && <Cursor />}
-      <div
-        className={`container mx-auto mb-10 ${
-          data.showCursor && "cursor-none"
-        }`}
-      >
+      <div className={`container mx-auto mb-10 ${data.showCursor && "cursor-none"} print:hidden`}>
         <Header 
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
