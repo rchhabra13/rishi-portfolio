@@ -21,7 +21,7 @@ const Footer = ({}) => {
         </div>
       </div>
       <h1 className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0">
-        Powered by <b>NextJS</b> & <b>TailwindCSS</b>
+        Made by <b>Rishi Chhabra</b> in <b>Next.js</b> and <b>Tailwind CSS</b> 2025
       </h1>
     </>
   );

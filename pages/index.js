@@ -10,6 +10,7 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
+import ContactForm from "../components/ContactForm";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -138,6 +139,12 @@ export default function Home() {
           <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
             {data.aboutpara}
           </p>
+        </div>
+        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" id="contact">
+          <h1 className="tablet:m-10 text-2xl text-bold">Contact.</h1>
+          <div className="tablet:m-10">
+            <ContactForm />
+          </div>
         </div>
         <Footer />
       </div>
