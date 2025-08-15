@@ -7,13 +7,11 @@ import Button from "../components/Button";
 import Head from "next/head";
 import { useTheme } from "next-themes";
 // Data
-import { name, showResume } from "../data/portfolio.json";
-import { resume } from "../data/portfolio.json";
 import data from "../data/portfolio.json";
 
 const Resume = () => {
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
   const [mount, setMount] = useState(false);
   const getSocialLink = (title) =>
     data.socials.find((s) => s.title.toLowerCase() === title.toLowerCase())?.link;
@@ -41,7 +39,7 @@ const Resume = () => {
     
     const link = document.createElement('a');
     link.href = pdfPath;
-    link.download = `${name.replace(/\s+/g, '_')}_Resume.pdf`; 
+    link.download = `${data.name.replace(/\s+/g, '_')}_Resume.pdf`; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -50,7 +48,7 @@ const Resume = () => {
   return (
     <>
       <Head>
-        <title>{name}&apos;s Resume</title>
+        <title>{data.name}&apos;s Resume</title>
       </Head>
       {data.showCursor && <Cursor />}
       <div
@@ -64,11 +62,7 @@ const Resume = () => {
         />
         {mount && (
           <div className="mt-10 w-full flex flex-col items-center">
-            <div
-              className={`w-full ${
-                mount && theme === "dark" ? "text-white" : "text-black"
-              } max-w-6xl p-6 tablet:p-10 rounded-xl`}
-            >
+            <div className="w-full max-w-6xl p-6 tablet:p-10 rounded-xl text-black dark:text-white">
               <div className="flex items-center justify-between">
                 <div>
                   <h1 className="text-3xl font-bold">Resume</h1>
@@ -99,15 +93,15 @@ const Resume = () => {
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
-                <div className={`rounded-xl border ${theme === "dark" ? "border-slate-700 bg-slate-800/60" : "border-gray-200 bg-white"} p-6`}>
-                  <h2 className="text-xl font-semibold">{name}</h2>
+                <div className="rounded-xl border border-gray-200 bg-white dark:border-slate-700 dark:bg-slate-800/60 p-6">
+                  <h2 className="text-xl font-semibold">{data.name}</h2>
                   {locationText && (
                     <p className="mt-1 text-sm opacity-70">{locationText}</p>
                   )}
-                  <p className="mt-4 text-lg">{resume.tagline}</p>
-                  <p className="mt-2 opacity-80">{resume.description}</p>
+                  <p className="mt-4 text-lg">{data.resume.tagline}</p>
+                  <p className="mt-2 opacity-80">{data.resume.description}</p>
                 </div>
-                <div className={`rounded-xl border ${theme === "dark" ? "border-slate-700 bg-slate-800/60" : "border-gray-200 bg-white"} p-6`}>
+                <div className="rounded-xl border border-gray-200 bg-white dark:border-slate-700 dark:bg-slate-800/60 p-6">
                   <h3 className="text-lg font-semibold">Contact</h3>
                   <div className="grid grid-cols-1 gap-4 mt-4">
                     {emailLink && (
@@ -138,14 +132,14 @@ const Resume = () => {
                 </div>
               </div>
 
-              <div className={`mt-8 rounded-xl border ${theme === "dark" ? "border-slate-700 bg-slate-800/60" : "border-gray-200 bg-white"} p-6`}>
+              <div className="mt-8 rounded-xl border border-gray-200 bg-white dark:border-slate-700 dark:bg-slate-800/60 p-6">
                 <h1 className="text-2xl font-bold">Tech Stack</h1>
                 <div className="grid grid-cols-1 tablet:grid-cols-3 gap-6 mt-4">
-                  {resume.languages && (
+                  {data.resume.languages && (
                     <div>
                       <h2 className="text-lg">Languages</h2>
                       <div className="mt-2">
-                        {resume.languages.map((item, index) => (
+                        {data.resume.languages.map((item, index) => (
                           <span key={index} className="inline-block text-sm px-3 py-1 mr-2 mb-2 rounded-full bg-gray-200 dark:bg-slate-700">
                             {item}
                           </span>
@@ -153,11 +147,11 @@ const Resume = () => {
                       </div>
                     </div>
                   )}
-                  {resume.frameworks && (
+                  {data.resume.frameworks && (
                     <div>
                       <h2 className="text-lg">Frameworks</h2>
                       <div className="mt-2">
-                        {resume.frameworks.map((item, index) => (
+                        {data.resume.frameworks.map((item, index) => (
                           <span key={index} className="inline-block text-sm px-3 py-1 mr-2 mb-2 rounded-full bg-gray-200 dark:bg-slate-700">
                             {item}
                           </span>
@@ -165,11 +159,11 @@ const Resume = () => {
                       </div>
                     </div>
                   )}
-                  {resume.others && (
+                  {data.resume.others && (
                     <div>
                       <h2 className="text-lg">Others</h2>
                       <div className="mt-2">
-                        {resume.others.map((item, index) => (
+                        {data.resume.others.map((item, index) => (
                           <span key={index} className="inline-block text-sm px-3 py-1 mr-2 mb-2 rounded-full bg-gray-200 dark:bg-slate-700">
                             {item}
                           </span>
@@ -182,9 +176,9 @@ const Resume = () => {
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
                 <div className="lg:col-span-2">
-                  <div className={`rounded-xl border ${theme === "dark" ? "border-slate-700 bg-slate-800/60" : "border-gray-200 bg-white"} p-6`}>
+                  <div className="rounded-xl border border-gray-200 bg-white dark:border-slate-700 dark:bg-slate-800/60 p-6">
                     <h1 className="text-2xl font-bold">Career Journey</h1>
-                    {resume.experiences.map(
+                    {data.resume.experiences.map(
                       ({ id, dates, type, position, company, location, tags, logo, bullets }) => (
                         <ProjectResume
                           key={id}
@@ -202,17 +196,17 @@ const Resume = () => {
                   </div>
                 </div>
                 <div className="space-y-6">
-                  <div className={`rounded-xl border ${theme === "dark" ? "border-slate-700 bg-slate-800/60" : "border-gray-200 bg-white"} p-6`}>
+                  <div className="rounded-xl border border-gray-200 bg-white dark:border-slate-700 dark:bg-slate-800/60 p-6">
                     <h1 className="text-2xl font-bold">Education</h1>
                     <div className="mt-2">
-                      <h2 className="text-lg">{resume.education.universityName1}</h2>
-                      <h3 className="text-sm opacity-75">{resume.education.universityDate1}</h3>
-                      <p className="text-sm mt-2 opacity-80">{resume.education.universityPara1}</p>
+                      <h2 className="text-lg">{data.resume.education.universityName1}</h2>
+                      <h3 className="text-sm opacity-75">{data.resume.education.universityDate1}</h3>
+                      <p className="text-sm mt-2 opacity-80">{data.resume.education.universityPara1}</p>
                     </div>
                     <div className="mt-4">
-                      <h2 className="text-lg">{resume.education.universityName2}</h2>
-                      <h3 className="text-sm opacity-75">{resume.education.universityDate2}</h3>
-                      <p className="text-sm mt-2 opacity-80">{resume.education.universityPara2}</p>
+                      <h2 className="text-lg">{data.resume.education.universityName2}</h2>
+                      <h3 className="text-sm opacity-75">{data.resume.education.universityDate2}</h3>
+                      <p className="text-sm mt-2 opacity-80">{data.resume.education.universityPara2}</p>
                     </div>
                   </div>
                 </div>

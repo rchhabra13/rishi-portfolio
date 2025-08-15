@@ -8,7 +8,7 @@ import data from "../../data/portfolio.json";
 
 const Header = ({ handleWorkScroll, handleAboutScroll }) => {
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
+  const { theme, resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   const { name, showResume } = data;
@@ -22,7 +22,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
       <Popover className="block tablet:hidden mt-5">
         {({ open }) => (
           <>
-            <div className={`flex items-center justify-between px-4 py-3 rounded-xl border ${theme === "dark" ? "bg-slate-900/60 border-slate-700" : "bg-white/70 backdrop-blur border-slate-200"}`}>
+            <div className={
+              "flex items-center justify-between px-4 py-3 rounded-xl border bg-white/70 backdrop-blur border-slate-200 dark:bg-slate-900/60 dark:border-slate-700 dark:text-white"
+            }>
               <h1
                 onClick={() => router.push("/")}
                 className="font-semibold tracking-tight link"
@@ -34,13 +36,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                 {data.darkMode && (
                   <Button
                     onClick={() =>
-                      setTheme(theme === "dark" ? "light" : "dark")
+                      setTheme((resolvedTheme === "dark") ? "light" : "dark")
                     }
                   >
                     <img
                       className="h-6"
                       src={`/images/${
-                        theme === "dark" ? "moon.svg" : "sun.svg"
+                        resolvedTheme === "dark" ? "moon.svg" : "sun.svg"
                       }`}
                     ></img>
                   </Button>
@@ -51,21 +53,17 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                     className="h-5"
                     src={`/images/${
                       !open
-                        ? theme === "dark"
-                          ? "menu-white.svg"
-                          : "menu.svg"
-                        : theme === "light"
-                        ? "cancel.svg"
-                        : "cancel-white.svg"
+                        ? (resolvedTheme === "dark" ? "menu-white.svg" : "menu.svg")
+                        : (resolvedTheme === "light" ? "cancel.svg" : "cancel-white.svg")
                     }`}
                   ></img>
                 </Popover.Button>
               </div>
             </div>
             <Popover.Panel
-              className={`absolute right-0 z-10 w-11/12 p-4 ${
-                theme === "dark" ? "bg-slate-800" : "bg-white"
-              } shadow-md rounded-md`}
+              className={
+                "absolute right-0 z-10 w-11/12 p-4 bg-white shadow-md rounded-md dark:bg-slate-800"
+              }
             >
               {(
                 <div className="grid grid-cols-1">
@@ -94,9 +92,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
         )}
       </Popover>
       <div
-        className={`sticky top-0 z-20 hidden tablet:flex items-center justify-between mt-6 px-6 py-3 rounded-xl border ${
-          theme === "dark" ? "bg-slate-900/60 border-slate-700 text-white" : "bg-white/70 backdrop-blur border-slate-200"
-        }`}
+        className={
+          "sticky top-0 z-20 hidden tablet:flex items-center justify-between mt-6 px-6 py-3 rounded-xl border bg-white/70 backdrop-blur border-slate-200 dark:bg-slate-900/60 dark:border-slate-700 dark:text-white"
+        }
       >
         <h1
           onClick={() => router.push("/")}
@@ -121,9 +119,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
           >
             Contact
           </Button>
-          {mounted && theme && data.darkMode && (
-            <Button classes="px-3 py-1" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-              <img className="h-6" src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`} />
+          {mounted && resolvedTheme && data.darkMode && (
+            <Button classes="px-3 py-1" onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
+              <img className="h-6" src={`/images/${resolvedTheme === "dark" ? "moon.svg" : "sun.svg"}`} />
             </Button>
           )}
         </nav>
