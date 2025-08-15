@@ -97,7 +97,7 @@ export default function Home() {
             <div className="mt-5 tablet:mt-0 flex justify-center">
               <div className="relative w-48 h-48 tablet:w-64 tablet:h-64 laptop:w-80 laptop:h-80">
                 <img 
-                  src={data.profileImage || "/images/profile.jpg"} 
+                  src={data.profileImage || "/images/photo.jpg"} 
                   alt={`${data.name}'s profile`}
                   className="rounded-full object-cover w-full h-full border-4 border-gray-300 dark:border-gray-700 shadow-lg"
                 />
