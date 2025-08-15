@@ -1,0 +1,327 @@
+{
+  "name": "Rishi Chhabra",
+  "profileImage": "/images/profile_new.jpg",
+  "headerTaglineOne": "Hello 👋",
+  "headerTaglineTwo": "I'm Rishi Chhabra",
+  "headerTaglineThree": "AI & Machine Learning Engineer",
+  "headerTaglineFour": "based in New York, NY.",
+  "showResume": true,
+  "darkMode": true,
+  "socials": [
+    {
+      "id": "1",
+      "title": "Website",
+      "link": "https://rishichhabra.com"
+    },
+    {
+      "id": "2",
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/rchhabra1/"
+    },
+    {
+      "id": "3",
+      "title": "Email",
+      "link": "mailto:Rishi.chhabra@outlook.com"
+    },
+    {
+      "id": "4",
+      "title": "GitHub",
+      "link": "https://github.com/rchhabra13"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "LLM Fine-Tuning Pipeline on AWS",
+      "description": "AWS-based pipeline to fine-tune large language models on domain-specific data using SageMaker for distributed training on GPU instances with spot instances and MLflow tracking.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/llm-fine-tuning-aws"
+    },
+    {
+      "id": "2",
+      "title": "End-to-End MLOps Pipeline",
+      "description": "Fully automated ML workflow on AWS using Docker, Kubernetes, and Apache Airflow for CI/CD and orchestration with 60% reduction in deployment time.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/end-to-end-mlops-pipeline"
+    },
+    {
+      "id": "3",
+      "title": "RAG Q&A System for Internal Docs",
+      "description": "Enterprise-grade Retrieval-Augmented Generation system leveraging Azure AI Search and AWS Bedrock LLMs with semantic chunking pipelines.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/rag-qa-system"
+    },
+    {
+      "id": "4",
+      "title": "LLM-Powered Semantic Search Engine",
+      "description": "Semantic search platform using LLM embeddings and vector databases (FAISS, Milvus, Pinecone) for contextual search over unstructured data.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/llm-semantic-search"
+    },
+    {
+      "id": "5",
+      "title": "Local Kubernetes LLM Inference",
+      "description": "Local Kubernetes cluster on MacBook to host LLM inference services at the edge with optimized resource settings for transformer models.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/local-k8s-llm-inference"
+    },
+    {
+      "id": "6",
+      "title": "Multimodal AI Assistant",
+      "description": "Chatbot processing text and images using multimodal models (CLIP, Vision-LLM) for scene descriptions and visual question answering.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/multimodal-ai-assistant"
+    },
+    {
+      "id": "7",
+      "title": "Multimodal Facial Landmark Detection",
+      "description": "Dual-input ResNet50 (RGB+Depth) for 3D face modeling; TFLite-quantized for edge/mobile deployment.",
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Facial_Points.png",
+      "url": "https://github.com/rchhabra13/multimodal-facial-landmark-detection"
+    },
+    {
+      "id": "8",
+      "title": "Real-time Emotion Detection – PyTorch/Flutter",
+      "description": "MobileNetV3 with attention; classifies 7 emotions at 92% accuracy; live AWS deployment and analytics.",
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Emotion_Classification.png",
+      "url": "https://github.com/rchhabra13/real-time-emotion-detection"
+    },
+    {
+      "id": "9",
+      "title": "Advanced Facial Recognition – Flutter/AWS",
+      "description": "Secure authentication with FaceNet/triplet loss, liveness detection, serverless AWS Lambda/S3/DynamoDB.",
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/7/74/Face_recognition.jpg",
+      "url": "https://github.com/rchhabra13/advanced-facial-recognition"
+    },
+    {
+      "id": "10",
+      "title": "Automated Contract Summarizer",
+      "description": "LLMs + OCR + NLP to generate concise summaries and highlight risk clauses from lengthy contracts, streamlining legal workflows.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/automated-contract-summarizer"
+    },
+    {
+      "id": "11",
+      "title": "Personalized Learning Path Generator",
+      "description": "Student interaction data + knowledge graphs + RL to build tailored learning journeys and skill recommendations.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/personalized-learning-path-generator"
+    },
+    {
+      "id": "12",
+      "title": "Document-to-Database Pipeline for Compliance",
+      "description": "OCR/LLM pipeline to auto-extract structured data from global regulatory filings and forms for multinational compliance.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/regulatory-docs-to-database-pipeline"
+    },
+    {
+      "id": "13",
+      "title": "3D Visualization",
+      "description": "3D visualization of California's road network on Google Earth using Big Data",
+      "imageSrc": "https://www.guideoftheworld.com/wp-content/uploads/2023/11/California-Road-Map-scaled.jpg",
+      "url": "https://github.com/rchhabra13/3d-road-network-visualization"
+    },
+    {
+      "id": "14",
+      "title": "NYC Collision Analysis",
+      "description": "New York City Taxi Collision Analysis using Spatial data and computing",
+      "imageSrc": "https://publish.purewow.net/wp-content/uploads/sites/2/2018/05/nyc-yellow-taxi-in-times-square-hero.jpg",
+      "url": "https://github.com/rchhabra13/nyc-collision-analysis"
+    },
+    {
+      "id": "15",
+      "title": "Hate Speech Detector",
+      "description": "Multi-platform hate speech detector model using DistilBERT and AI",
+      "imageSrc": "https://moqod.com/static/img/hate-speech-01.min.png",
+      "url": "https://github.com/rchhabra13/hate-speech-detector"
+    },
+    {
+      "id": "16",
+      "title": "Phishing Website Detection",
+      "description": "Phishing Website Detection using K-Nearest Neighbours and Machine Learning",
+      "imageSrc": "https://elie.net/_astro/what-phishing-sites-look-like-study.B0g30Z1f_2souu0.jpg",
+      "url": "https://github.com/rchhabra13/phishing-website-detection"
+    },
+    {
+      "id": "17",
+      "title": "Real-time Fire Detection",
+      "description": "Fire detection system using CNN and Live Video Feed",
+      "imageSrc": "https://miro.medium.com/v2/da:true/resize:fit:800/1*HVm63Me_kPRNy0vxekCabw.gif",
+      "url": "https://github.com/rchhabra13/real-time-fire-detection"
+    },
+    {
+      "id": "18",
+      "title": "I-Manager",
+      "description": "Football team management app for players, matches, and performance analytics.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/i-manager"
+    },
+    {
+      "id": "19",
+      "title": "Panda",
+      "description": "Modern dating app with smart matching algorithms and real-time chat.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/panda"
+    },
+    {
+      "id": "20",
+      "title": "Fake News Detection",
+      "description": "NLP system to detect and classify fake news using ML pipelines.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/fake-news-detection"
+    },
+    {
+      "id": "21",
+      "title": "Sentiment Analysis",
+      "description": "Text sentiment analysis with emotion detection for social/media content.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/sentiment-analysis"
+    },
+    {
+      "id": "22",
+      "title": "Titanic Survival Prediction",
+      "description": "Binary classification on Titanic dataset with feature engineering.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/titanic-survival-prediction"
+    },
+    {
+      "id": "23",
+      "title": "Handwritten Digit Recognition",
+      "description": "CNN on MNIST with 98%+ accuracy; TFLite for mobile deployment.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/handwritten-digit-recognition"
+    },
+    {
+      "id": "24",
+      "title": "Movie Review Sentiment Analysis",
+      "description": "Movie review classifier using TF‑IDF and Naive Bayes with Flask UI.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/movie-review-sentiment-analysis"
+    },
+    {
+      "id": "25",
+      "title": "House Price Prediction",
+      "description": "Linear regression on Boston Housing with Streamlit dashboard.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/house-price-prediction"
+    },
+    {
+      "id": "26",
+      "title": "Serverless Contact Form",
+      "description": "AWS Lambda + API Gateway + DynamoDB + SES for contact form.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/serverless-contact-form"
+    },
+    {
+      "id": "27",
+      "title": "Image Upload & Compression",
+      "description": "Image upload to S3 with automatic compression via AWS Lambda.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/image-upload-compression"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "AI, Machine Learning & Computer Vision",
+      "description": "End-to-end model development with TensorFlow/PyTorch for computer vision (facial recognition, emotion detection), LLM fine-tuning, multimodal AI systems, on-device inference (TFLite/Core ML), and document intelligence using LLMs + OCR for summarization and data extraction."
+    },
+    {
+      "id": "2",
+      "title": "Software Development",
+      "description": "Full‑stack web and mobile application engineering with React/Next.js, Flutter, Node.js/Express, Python/FastAPI/Django/Flask, and TypeScript—clean architectures, automated testing (Jest/PyTest), performance tuning, and accessibility best practices."
+    },
+    {
+      "id": "3",
+      "title": "Backend APIs & Cloud MLOps",
+      "description": "Design and operate REST/GraphQL services, event-driven pipelines, model serving (FastAPI/TorchServe), MLOps with MLflow/Apache Airflow, feature stores, CI/CD for ML, monitoring/observability, and secure auth/analytics for production AI systems."
+    },
+    {
+      "id": "4",
+      "title": "Cloud & DevOps (AWS/Azure)",
+      "description": "AWS-first delivery: Serverless (Lambda, API Gateway, S3, DynamoDB, SageMaker, Bedrock), containers (Docker, ECS/EKS), IaC (CloudFormation/Terraform), CI/CD, Kubernetes, Azure AI services, and comprehensive monitoring for scalable, reliable AI systems."
+    }
+  ],
+  "aboutpara": "AI/ML-focused software engineer specializing in designing and deploying intelligent systems (LLMs, semantic search, vector databases) with cloud-native MLOps. Proven ability to build scalable, privacy-preserving solutions for web, mobile, and enterprise applications.",
+  "resume": {
+    "tagline": "AI & Machine Learning Engineer",
+    "description": "Transforming real-world problems into intelligent solutions with expertise in computer vision, deep learning, and scalable cloud deployment.",
+    "experiences": [
+      {
+        "id": "1",
+        "dates": "Feb 2024 – Aug 2024",
+        "type": "Hybrid",
+        "position": "Senior Flutter Developer",
+        "company": "Incuwise",
+        "location": "Noida, India",
+        "tags": ["Flutter", "Node.js", "AWS", "Firebase"],
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png",
+        "bullets": [
+          "Developed and launched 4 cross-platform mobile applications using Flutter and Node.js backends; led migration of server infrastructure from Linode to AWS, significantly improving scalability and reliability.",
+          "Enhanced user engagement and transaction security by integrating Firebase Cloud Messaging, Google Maps APIs, Stripe payment processing, and OAuth authentication into mobile apps.",
+          "Collaborated with QA and design teams in an Agile environment to deliver high-quality features on schedule, applying test-driven development and CI/CD best practices."
+        ]
+      }
+    ],
+    "education": {
+      "universityName1": "Stevens Institute of Technology — M.S. in Machine Learning (Hoboken, NJ)",
+      "universityDate1": "Sep 2024 – Present",
+      "universityPara1": "Focus: Deep learning, computer vision, applied AI.",
+      "universityName2": "Central University of Haryana — B.Tech in Computer Science",
+      "universityDate2": "Sep 2020 – May 2024",
+      "universityPara2": "Focus: Advanced algorithms, software engineering, scalable systems."
+    },
+    "certifications": [
+      {
+        "id": "1",
+        "title": "AWS Certified Developer – Associate",
+        "description": "Validates proficiency in developing, deploying, and debugging cloud-based applications using AWS. Demonstrates knowledge of AWS services, SDKs, CI/CD, and security best practices."
+      }
+    ],
+    "languages": [
+      "Python",
+      "Java",
+      "C++",
+      "JavaScript",
+      "TypeScript",
+      "Dart",
+      "SQL",
+      "R"
+    ],
+    "frameworks": [
+      "TensorFlow",
+      "PyTorch",
+      "scikit-learn",
+      "Keras",
+      "OpenCV",
+      "NLTK",
+      "Hugging Face Transformers"
+    ],
+    "webMobile": [
+      "Flutter",
+      "React.js",
+      "Node.js (Express)",
+      "GraphQL",
+      "Flask",
+      "Django",
+      "RESTful APIs"
+    ],
+    "cloudDevOps": [
+      "AWS (Lambda, EC2, S3, DynamoDB, Rekognition, Bedrock, SageMaker)",
+      "Microsoft Azure (AI services)",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD (GitHub Actions, Jenkins)",
+      "MLflow",
+      "Apache Airflow"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "Firebase",
+      "Vector DBs (Pinecone, Milvus, FAISS)"
+    ]
+  }
+}
