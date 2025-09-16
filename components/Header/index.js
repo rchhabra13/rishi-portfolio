@@ -6,7 +6,7 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleAboutScroll }) => {
+const Header = ({ handleWorkScroll, handleAboutScroll, handleBlogScroll }) => {
   const router = useRouter();
   const { theme, resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -68,6 +68,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
               {(
                 <div className="grid grid-cols-1">
                   <Button onClick={handleWorkScroll}>Work</Button>
+                  <Button onClick={handleBlogScroll}>Blog</Button>
                   <Button onClick={handleAboutScroll}>About</Button>
                   {showResume && (
                     <Button
@@ -104,6 +105,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
         </h1>
         <nav className="flex items-center gap-2">
           <Button classes="px-3 py-1" onClick={handleWorkScroll}>Work</Button>
+          <Button classes="px-3 py-1" onClick={handleBlogScroll}>Blog</Button>
           <Button classes="px-3 py-1" onClick={handleAboutScroll}>About</Button>
           {showResume && (
             <Button classes="px-3 py-1" onClick={() => router.push("/resume")}>Experience</Button>

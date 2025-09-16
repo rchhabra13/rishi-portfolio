@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
+import ProjectSection from "../components/ProjectSection";
+import BlogSection from "../components/BlogSection";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
@@ -18,6 +20,7 @@ import data from "../data/portfolio.json";
 export default function Home() {
   // Ref
   const workRef = useRef();
+  const blogRef = useRef();
   const aboutRef = useRef();
   const textOne = useRef();
   const textTwo = useRef();
@@ -28,6 +31,14 @@ export default function Home() {
   const handleWorkScroll = () => {
     window.scrollTo({
       top: workRef.current.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleBlogScroll = () => {
+    window.scrollTo({
+      top: blogRef.current.offsetTop,
       left: 0,
       behavior: "smooth",
     });
@@ -53,7 +64,65 @@ export default function Home() {
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
       {data.showCursor && <Cursor />}
       <Head>
-        <title>{data.name}&apos;s Portfolio</title>
+        <title>{data.seo?.title || `${data.name}'s Portfolio`}</title>
+        <meta name="description" content={data.seo?.description || `Portfolio of ${data.name}, ${data.headerTaglineThree} based in ${data.headerTaglineFour}`} />
+        <meta name="keywords" content={data.seo?.keywords || "AI Engineer, Machine Learning, Portfolio, Software Developer"} />
+        <meta name="author" content={data.seo?.author || data.name} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content={data.seo?.type || "website"} />
+        <meta property="og:url" content={data.seo?.url || "https://rishichhabra.com"} />
+        <meta property="og:title" content={data.seo?.title || `${data.name}'s Portfolio`} />
+        <meta property="og:description" content={data.seo?.description || `Portfolio of ${data.name}, ${data.headerTaglineThree}`} />
+        <meta property="og:image" content={data.seo?.image || data.profileImage} />
+        <meta property="og:site_name" content={data.seo?.siteName || `${data.name} Portfolio`} />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={data.seo?.url || "https://rishichhabra.com"} />
+        <meta property="twitter:title" content={data.seo?.title || `${data.name}'s Portfolio`} />
+        <meta property="twitter:description" content={data.seo?.description || `Portfolio of ${data.name}, ${data.headerTaglineThree}`} />
+        <meta property="twitter:image" content={data.seo?.image || data.profileImage} />
+        
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <link rel="canonical" href={data.seo?.url || "https://rishichhabra.com"} />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": data.name,
+              "jobTitle": data.headerTaglineThree,
+              "description": data.seo?.description || `Portfolio of ${data.name}, ${data.headerTaglineThree}`,
+              "url": data.seo?.url || "https://rishichhabra.com",
+              "image": data.seo?.image || data.profileImage,
+              "sameAs": data.socials?.map(social => social.link) || [],
+              "knowsAbout": [
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Deep Learning",
+                "Computer Vision",
+                "Natural Language Processing",
+                "MLOps",
+                "Cloud Computing",
+                "Python",
+                "TensorFlow",
+                "PyTorch"
+              ],
+              "hasOccupation": {
+                "@type": "Occupation",
+                "name": "AI & Machine Learning Engineer",
+                "description": "Specializing in AI/ML solutions, computer vision, and cloud deployment"
+              }
+            })
+          }}
+        />
       </Head>
 
       <div className="gradient-circle"></div>
@@ -62,6 +131,7 @@ export default function Home() {
       <div className="container mx-auto mb-10">
         <Header
           handleWorkScroll={handleWorkScroll}
+          handleBlogScroll={handleBlogScroll}
           handleAboutScroll={handleAboutScroll}
         />
         <div className="laptop:mt-20 mt-10">
@@ -106,20 +176,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef} id="work">
-          <h1 className="text-2xl text-bold">Work.</h1>
-
-          <div className="mt-5 laptop:mt-10 grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 gap-3 tablet:gap-4">
-            {data.projects.map((project) => (
-              <WorkCard
-                key={project.id}
-                img={project.imageSrc}
-                name={project.title}
-                description={project.description}
-                onClick={() => window.open(project.url)}
-              />
-            ))}
-          </div>
+        <div ref={workRef} id="work">
+          <ProjectSection data={data} />
         </div>
 
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
@@ -133,6 +191,11 @@ export default function Home() {
               />
             ))}
           </div>
+        </div>
+
+        {/* Blog Section */}
+        <div ref={blogRef} id="blog">
+          <BlogSection data={data} />
         </div>
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef} id="about">
           <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>

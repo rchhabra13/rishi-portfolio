@@ -9,12 +9,18 @@
     "lint": "next lint",
     "export": "next build && next export",
     "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out",
-    "seed:firestore": "node --experimental-modules scripts/seedFirestore.js"
+    "seed:firestore": "node scripts/seedFirestore.js",
+    "test:models": "node scripts/testLocalModels.js",
+    "setup:pinecone": "node scripts/setupPinecone.js",
+    "create:embeddings": "node scripts/createEmbeddings.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
+    "@pinecone-database/pinecone": "^6.1.2",
     "autoprefixer": "^10.4.7",
+    "axios": "^1.6.0",
     "custom-cursor-react": "^1.0.5",
+    "dotenv": "^16.3.1",
     "gray-matter": "^4.0.3",
     "gsap": "^3.10.4",
     "next": "12.1.6",

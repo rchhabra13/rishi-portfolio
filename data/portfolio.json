@@ -8,11 +8,7 @@
   "showResume": true,
   "darkMode": true,
   "socials": [
-    {
-      "id": "1",
-      "title": "Website",
-      "link": "https://rishichhabra.com"
-    },
+  
     {
       "id": "2",
       "title": "LinkedIn",
@@ -29,197 +25,678 @@
       "link": "https://github.com/rchhabra13"
     }
   ],
-  "projects": [
+  "featuredProjects": [
     {
       "id": "1",
-      "title": "LLM Fine-Tuning Pipeline on AWS",
-      "description": "AWS-based pipeline to fine-tune large language models on domain-specific data using SageMaker for distributed training on GPU instances with spot instances and MLflow tracking.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/llm-fine-tuning-aws"
-    },
-    {
-      "id": "2",
       "title": "End-to-End MLOps Pipeline",
       "description": "Fully automated ML workflow on AWS using Docker, Kubernetes, and Apache Airflow for CI/CD and orchestration with 60% reduction in deployment time.",
       "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/end-to-end-mlops-pipeline"
+      "url": "https://github.com/rchhabra13/end-to-end-mlops-pipeline",
+      "category": "MLOps",
+      "tags": ["AWS", "Docker", "Kubernetes", "Airflow", "MLOps"]
+    },
+    {
+      "id": "2",
+      "title": "LLM Fine-Tuning Pipeline on AWS",
+      "description": "AWS-based pipeline to fine-tune large language models on domain-specific data using SageMaker for distributed training on GPU instances with spot instances and MLflow tracking.",
+      "imageSrc": "/images/back.svg",
+      "url": "https://github.com/rchhabra13/llm-fine-tuning-aws",
+      "category": "AI/ML",
+      "tags": ["AWS", "SageMaker", "LLM", "Fine-tuning", "MLflow"]
     },
     {
       "id": "3",
-      "title": "RAG Q&A System for Internal Docs",
-      "description": "Enterprise-grade Retrieval-Augmented Generation system leveraging Azure AI Search and AWS Bedrock LLMs with semantic chunking pipelines.",
+      "title": "Agentic RAG with Reasoning",
+      "description": "RAG system combining retrieval with reasoning chains for improved factual accuracy using LangChain and Llama3.",
       "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/rag-qa-system"
+      "url": "https://github.com/rchhabra13/agentic-rag-reasoning",
+      "category": "AI/ML",
+      "tags": ["RAG", "LangChain", "Llama3", "Reasoning", "AI"]
     },
     {
       "id": "4",
-      "title": "LLM-Powered Semantic Search Engine",
-      "description": "Semantic search platform using LLM embeddings and vector databases (FAISS, Milvus, Pinecone) for contextual search over unstructured data.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/llm-semantic-search"
-    },
-    {
-      "id": "5",
-      "title": "Local Kubernetes LLM Inference",
-      "description": "Local Kubernetes cluster on MacBook to host LLM inference services at the edge with optimized resource settings for transformer models.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/local-k8s-llm-inference"
-    },
-    {
-      "id": "6",
       "title": "Multimodal AI Assistant",
       "description": "Chatbot processing text and images using multimodal models (CLIP, Vision-LLM) for scene descriptions and visual question answering.",
       "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/multimodal-ai-assistant"
+      "url": "https://github.com/rchhabra13/multimodal-ai-assistant",
+      "category": "AI/ML",
+      "tags": ["Multimodal", "CLIP", "Vision-LLM", "AI", "Computer Vision"]
     },
     {
-      "id": "7",
-      "title": "Multimodal Facial Landmark Detection",
-      "description": "Dual-input ResNet50 (RGB+Depth) for 3D face modeling; TFLite-quantized for edge/mobile deployment.",
-      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Facial_Points.png",
-      "url": "https://github.com/rchhabra13/multimodal-facial-landmark-detection"
-    },
-    {
-      "id": "8",
-      "title": "Real-time Emotion Detection – PyTorch/Flutter",
-      "description": "MobileNetV3 with attention; classifies 7 emotions at 92% accuracy; live AWS deployment and analytics.",
-      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Emotion_Classification.png",
-      "url": "https://github.com/rchhabra13/real-time-emotion-detection"
-    },
-    {
-      "id": "9",
-      "title": "Advanced Facial Recognition – Flutter/AWS",
-      "description": "Secure authentication with FaceNet/triplet loss, liveness detection, serverless AWS Lambda/S3/DynamoDB.",
-      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/7/74/Face_recognition.jpg",
-      "url": "https://github.com/rchhabra13/advanced-facial-recognition"
-    },
-    {
-      "id": "10",
-      "title": "Automated Contract Summarizer",
-      "description": "LLMs + OCR + NLP to generate concise summaries and highlight risk clauses from lengthy contracts, streamlining legal workflows.",
+      "id": "5",
+      "title": "xAI Finance Agent",
+      "description": "Autonomous agent leveraging financial datasets and LLM reasoning to provide market insights, portfolio optimization, and real-time risk assessment.",
       "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/automated-contract-summarizer"
+      "url": "https://github.com/rchhabra13/xai-finance-agent",
+      "category": "Finance",
+      "tags": ["AI Agent", "Finance", "LangChain", "Portfolio Optimization", "Risk Assessment"]
     },
     {
-      "id": "11",
-      "title": "Personalized Learning Path Generator",
-      "description": "Student interaction data + knowledge graphs + RL to build tailored learning journeys and skill recommendations.",
+      "id": "6",
+      "title": "Advanced AI Agents Framework",
+      "description": "Framework for scalable multi-agent orchestration, supporting autonomous task planning, delegation, and tool integration using LangChain and CrewAI.",
       "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/personalized-learning-path-generator"
-    },
-    {
-      "id": "12",
-      "title": "Document-to-Database Pipeline for Compliance",
-      "description": "OCR/LLM pipeline to auto-extract structured data from global regulatory filings and forms for multinational compliance.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/regulatory-docs-to-database-pipeline"
-    },
-    {
-      "id": "13",
-      "title": "3D Visualization",
-      "description": "3D visualization of California's road network on Google Earth using Big Data",
-      "imageSrc": "https://www.guideoftheworld.com/wp-content/uploads/2023/11/California-Road-Map-scaled.jpg",
-      "url": "https://github.com/rchhabra13/3d-road-network-visualization"
-    },
-    {
-      "id": "14",
-      "title": "NYC Collision Analysis",
-      "description": "New York City Taxi Collision Analysis using Spatial data and computing",
-      "imageSrc": "https://publish.purewow.net/wp-content/uploads/sites/2/2018/05/nyc-yellow-taxi-in-times-square-hero.jpg",
-      "url": "https://github.com/rchhabra13/nyc-collision-analysis"
-    },
-    {
-      "id": "15",
-      "title": "Hate Speech Detector",
-      "description": "Multi-platform hate speech detector model using DistilBERT and AI",
-      "imageSrc": "https://moqod.com/static/img/hate-speech-01.min.png",
-      "url": "https://github.com/rchhabra13/hate-speech-detector"
-    },
-    {
-      "id": "16",
-      "title": "Phishing Website Detection",
-      "description": "Phishing Website Detection using K-Nearest Neighbours and Machine Learning",
-      "imageSrc": "https://elie.net/_astro/what-phishing-sites-look-like-study.B0g30Z1f_2souu0.jpg",
-      "url": "https://github.com/rchhabra13/phishing-website-detection"
-    },
-    {
-      "id": "17",
-      "title": "Real-time Fire Detection",
-      "description": "Fire detection system using CNN and Live Video Feed",
-      "imageSrc": "https://miro.medium.com/v2/da:true/resize:fit:800/1*HVm63Me_kPRNy0vxekCabw.gif",
-      "url": "https://github.com/rchhabra13/real-time-fire-detection"
-    },
-    {
-      "id": "18",
-      "title": "I-Manager",
-      "description": "Football team management app for players, matches, and performance analytics.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/i-manager"
-    },
-    {
-      "id": "19",
-      "title": "Panda",
-      "description": "Modern dating app with smart matching algorithms and real-time chat.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/panda"
-    },
-    {
-      "id": "20",
-      "title": "Fake News Detection",
-      "description": "NLP system to detect and classify fake news using ML pipelines.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/fake-news-detection"
-    },
-    {
-      "id": "21",
-      "title": "Sentiment Analysis",
-      "description": "Text sentiment analysis with emotion detection for social/media content.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/sentiment-analysis"
-    },
-    {
-      "id": "22",
-      "title": "Titanic Survival Prediction",
-      "description": "Binary classification on Titanic dataset with feature engineering.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/titanic-survival-prediction"
-    },
-    {
-      "id": "23",
-      "title": "Handwritten Digit Recognition",
-      "description": "CNN on MNIST with 98%+ accuracy; TFLite for mobile deployment.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/handwritten-digit-recognition"
-    },
-    {
-      "id": "24",
-      "title": "Movie Review Sentiment Analysis",
-      "description": "Movie review classifier using TF‑IDF and Naive Bayes with Flask UI.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/movie-review-sentiment-analysis"
-    },
-    {
-      "id": "25",
-      "title": "House Price Prediction",
-      "description": "Linear regression on Boston Housing with Streamlit dashboard.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/house-price-prediction"
-    },
-    {
-      "id": "26",
-      "title": "Serverless Contact Form",
-      "description": "AWS Lambda + API Gateway + DynamoDB + SES for contact form.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/serverless-contact-form"
-    },
-    {
-      "id": "27",
-      "title": "Image Upload & Compression",
-      "description": "Image upload to S3 with automatic compression via AWS Lambda.",
-      "imageSrc": "/images/back.svg",
-      "url": "https://github.com/rchhabra13/image-upload-compression"
+      "url": "https://github.com/rchhabra13/advanced-ai-agents",
+      "category": "AI/ML",
+      "tags": ["Multi-Agent", "LangChain", "CrewAI", "Orchestration", "AI"]
     }
   ],
+  "projectCategories": {
+    "aiAgents": {
+      "title": "🤖 AI Agents & Multi-Agent Systems",
+      "description": "Autonomous agents and multi-agent systems for various domains",
+      "projects": [
+        {
+          "id": "1",
+          "title": "xAI Finance Agent",
+          "description": "Autonomous agent leveraging financial datasets and LLM reasoning to provide market insights, portfolio optimization, and real-time risk assessment.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/xai-finance-agent",
+          "tags": ["Python", "LangChain", "Finance APIs"]
+        },
+        {
+          "id": "2",
+          "title": "OpenAI Research Agent",
+          "description": "Agentic workflow for deep research and automated summarization across multiple sources using GPT and retrieval pipelines.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/openai-research-agent",
+          "tags": ["OpenAI API", "RAG", "FastAPI"]
+        },
+        {
+          "id": "3",
+          "title": "Web Scraping AI Agent (Local & Cloud)",
+          "description": "Intelligent scraper with structured data extraction and summarization, deployable both locally and on cloud infrastructure.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/web-scraping-ai-agent",
+          "tags": ["BeautifulSoup", "Selenium", "AWS Lambda"]
+        },
+        {
+          "id": "4",
+          "title": "Advanced AI Agents",
+          "description": "Framework for scalable multi-agent orchestration, supporting autonomous task planning, delegation, and tool integration.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/advanced-ai-agents",
+          "tags": ["LangChain", "CrewAI", "OpenAI"]
+        },
+        {
+          "id": "5",
+          "title": "AI Deep Research Agent",
+          "description": "Automates literature review and knowledge synthesis using multi-source retrieval, semantic search, and summarization.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-deep-research-agent",
+          "tags": ["RAG", "Pinecone", "GPT-4"]
+        },
+        {
+          "id": "6",
+          "title": "AI System Architect Agent",
+          "description": "Auto-generates system design diagrams, architecture recommendations, and deployment pipelines.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-system-architect-agent",
+          "tags": ["LLMs", "GraphViz", "AWS"]
+        },
+        {
+          "id": "7",
+          "title": "AI Financial Coach Agent",
+          "description": "Personalized financial assistant providing budgeting advice, savings strategies, and stock/crypto insights.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-financial-coach-agent",
+          "tags": ["LLM", "Finance APIs"]
+        },
+        {
+          "id": "8",
+          "title": "AI Health & Fitness Agent",
+          "description": "Creates adaptive workout routines and nutrition plans using reinforcement learning and health data.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-health-fitness-agent",
+          "tags": ["Python", "TensorFlow", "Fitness APIs"]
+        },
+        {
+          "id": "9",
+          "title": "AI Meeting Agent",
+          "description": "Autonomous meeting assistant for note-taking, summarization, and action-item tracking.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-meeting-agent",
+          "tags": ["Whisper", "GPT", "Notion API"]
+        },
+        {
+          "id": "10",
+          "title": "AI Self-Evolving Agent",
+          "description": "Reinforcement-driven autonomous agent that adapts behavior by fine-tuning on feedback loops.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-self-evolving-agent",
+          "tags": ["RLHF", "Llama3"]
+        },
+        {
+          "id": "11",
+          "title": "AI Tic-Tac-Toe Agent",
+          "description": "Game-playing RL agent with self-play and strategy optimization.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-tic-tac-toe-agent",
+          "tags": ["Python", "Minimax", "Reinforcement Learning"]
+        },
+        {
+          "id": "12",
+          "title": "AI Finance Agent Team",
+          "description": "Multi-agent system for financial analysis combining risk analyst, investment strategist, and market monitor agents.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-finance-agent-team",
+          "tags": ["CrewAI", "LangChain", "Finance APIs"]
+        },
+        {
+          "id": "13",
+          "title": "AI Game Design Agent Team",
+          "description": "Autonomous collaboration between creative and technical agents for procedural game design.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-game-design-agent-team",
+          "tags": ["Unity API", "GPT", "DALL·E"]
+        },
+        {
+          "id": "14",
+          "title": "AI Legal Agent Team (Cloud & Local)",
+          "description": "Agents specialized in legal document parsing, compliance checking, and contract drafting.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-legal-agent-team",
+          "tags": ["OCR", "GPT-4", "RAG"]
+        },
+        {
+          "id": "15",
+          "title": "AI Real Estate Agent Team",
+          "description": "Agents for property search, investment evaluation, and real-estate document analysis.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-real-estate-agent-team",
+          "tags": ["Zillow API", "GPT", "Pinecone"]
+        },
+        {
+          "id": "16",
+          "title": "Multimodal Coding Agent Team",
+          "description": "Agents collaborating on multimodal coding tasks (text + image input), code review, and debugging.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/multimodal-coding-agent-team",
+          "tags": ["GPT-4V", "LangChain", "VS Code API"]
+        }
+      ]
+    },
+    "rag": {
+      "title": "📀 Retrieval-Augmented Generation (RAG)",
+      "description": "Advanced RAG systems and semantic search solutions",
+      "projects": [
+        {
+          "id": "1",
+          "title": "Agentic RAG with Embedding Gemma",
+          "description": "Custom RAG pipeline using Gemma embeddings for domain-specific search and reasoning.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/agentic-rag-gemma",
+          "tags": ["Gemma", "FAISS"]
+        },
+        {
+          "id": "2",
+          "title": "Agentic RAG with Reasoning",
+          "description": "RAG system combining retrieval with reasoning chains for improved factual accuracy.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/agentic-rag-reasoning",
+          "tags": ["LangChain", "Llama3"]
+        },
+        {
+          "id": "3",
+          "title": "AI Blog Search (RAG)",
+          "description": "Semantic blog search engine with LLM-powered contextual answers.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/ai-blog-search-rag",
+          "tags": ["ElasticSearch", "Pinecone", "GPT"]
+        },
+        {
+          "id": "4",
+          "title": "Autonomous RAG",
+          "description": "Fully agent-driven RAG with query reformulation, contextual memory, and self-improvement loops.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/autonomous-rag",
+          "tags": ["LangChain Agents"]
+        },
+        {
+          "id": "5",
+          "title": "Contextual AI RAG Agent",
+          "description": "Context-aware retrieval assistant for enterprise knowledge bases.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/contextual-ai-rag-agent",
+          "tags": ["Azure AI Search", "GPT"]
+        },
+        {
+          "id": "6",
+          "title": "Corrective RAG (CRAG)",
+          "description": "Error-correcting retrieval pipeline ensuring higher factual consistency.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/corrective-rag",
+          "tags": ["LLMs", "Pinecone", "CRAG"]
+        },
+        {
+          "id": "7",
+          "title": "Deepseek Local RAG Agent",
+          "description": "Privacy-preserving local RAG pipeline optimized for on-device search.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/deepseek-local-rag-agent",
+          "tags": ["FAISS", "Llama 3 local inference"]
+        },
+        {
+          "id": "8",
+          "title": "Gemini Agentic RAG",
+          "description": "Multi-agent retrieval orchestration with Gemini models for reasoning-heavy queries.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/gemini-agentic-rag",
+          "tags": ["Gemini API"]
+        },
+        {
+          "id": "9",
+          "title": "Hybrid Search RAG (Cloud)",
+          "description": "Combines dense embeddings and keyword-based search for enterprise-scale data.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/hybrid-search-rag-cloud",
+          "tags": ["ElasticSearch", "FAISS"]
+        },
+        {
+          "id": "10",
+          "title": "Llama 3.1 Local RAG",
+          "description": "Local inference RAG optimized for small-scale deployment.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/llama-3-1-local-rag",
+          "tags": ["Llama 3.1", "FAISS", "FastAPI"]
+        },
+        {
+          "id": "11",
+          "title": "Local Hybrid Search RAG",
+          "description": "Combines hybrid vector + keyword search for offline knowledge bases.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/local-hybrid-search-rag",
+          "tags": ["FAISS", "BM25"]
+        },
+        {
+          "id": "12",
+          "title": "Local RAG Agent",
+          "description": "Lightweight RAG assistant designed for personal/local data.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/local-rag-agent",
+          "tags": ["Llama.cpp", "SQLite"]
+        },
+        {
+          "id": "13",
+          "title": "RAG-as-a-Service",
+          "description": "API-first retrieval augmented generation platform with multi-tenant support.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/rag-as-a-service",
+          "tags": ["Docker", "FastAPI", "Pinecone"]
+        },
+        {
+          "id": "14",
+          "title": "RAG Agent with Cohere",
+          "description": "RAG pipeline powered by Cohere embeddings for fast and scalable retrieval.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/rag-agent-cohere",
+          "tags": ["Cohere API", "Milvus"]
+        },
+        {
+          "id": "15",
+          "title": "Basic RAG Chain",
+          "description": "Simple LangChain RAG pipeline with embeddings and vector DB.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/basic-rag-chain",
+          "tags": ["LangChain", "FAISS"]
+        },
+        {
+          "id": "16",
+          "title": "RAG with Database Routing",
+          "description": "Intelligent query routing across multiple databases using RAG.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/rag-database-routing",
+          "tags": ["SQL", "Vector DB integration"]
+        },
+        {
+          "id": "17",
+          "title": "Vision RAG",
+          "description": "Retrieval + visual grounding for multimodal Q&A.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/vision-rag",
+          "tags": ["CLIP", "GPT-4V"]
+        },
+        {
+          "id": "18",
+          "title": "RAG Q&A System for Internal Docs",
+          "description": "Enterprise-grade Q&A over internal documents.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/rag-qa-system",
+          "tags": ["Azure AI Search", "Bedrock"]
+        },
+        {
+          "id": "19",
+          "title": "LLM-Powered Semantic Search Engine",
+          "description": "Search platform using LLM embeddings and vector DBs (FAISS, Milvus, Pinecone).",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/llm-semantic-search",
+          "tags": ["FAISS", "Milvus", "Pinecone"]
+        }
+      ]
+    },
+    "llmApps": {
+      "title": "💾 LLM Apps with Memory & Chat Systems",
+      "description": "Chat applications and LLM systems with persistent memory",
+      "projects": [
+        {
+          "id": "1",
+          "title": "Llama3 Stateful Chat",
+          "description": "Persistent conversation agent powered by Llama3 with session memory.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/llama3-stateful-chat",
+          "tags": ["Llama3", "Memory", "Chat"]
+        },
+        {
+          "id": "2",
+          "title": "LLM App with Personalized Memory",
+          "description": "Customizable LLM with long-term user memory for context retention.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/llm-personalized-memory",
+          "tags": ["LLM", "Memory", "Personalization"]
+        },
+        {
+          "id": "3",
+          "title": "Local ChatGPT Clone with Memory",
+          "description": "Privacy-first ChatGPT clone running locally with session-based memory.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/local-chatgpt-clone-memory",
+          "tags": ["Local", "ChatGPT", "Memory", "Privacy"]
+        },
+        {
+          "id": "4",
+          "title": "Multi-LLM Application with Shared Memory",
+          "description": "Coordinated LLM system sharing context across multiple agents.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/multi-llm-shared-memory",
+          "tags": ["Multi-LLM", "Shared Memory", "Coordination"]
+        },
+        {
+          "id": "5",
+          "title": "Chat with PDF",
+          "description": "RAG-powered app for querying PDF documents with GPT and Llama3.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/chat-with-pdf",
+          "tags": ["PDF", "RAG", "GPT", "Llama3"]
+        },
+        {
+          "id": "6",
+          "title": "Chat with Research Papers (ArXiv)",
+          "description": "Specialized academic search and chat assistant.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/chat-research-papers-arxiv",
+          "tags": ["ArXiv API", "GPT", "FAISS"]
+        }
+      ]
+    },
+    "fineTuning": {
+      "title": "🔧 Fine-Tuning & Model Training",
+      "description": "LLM fine-tuning and model training pipelines",
+      "projects": [
+        {
+          "id": "1",
+          "title": "Gemma 3 Fine-tuning",
+          "description": "Domain-specific fine-tuning of Gemma LLM for specialized tasks.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/gemma-3-fine-tuning",
+          "tags": ["Gemma", "LoRA"]
+        },
+        {
+          "id": "2",
+          "title": "Llama 3.2 Fine-tuning",
+          "description": "Efficient Llama fine-tuning pipeline with parameter-efficient methods.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/llama-3-2-fine-tuning",
+          "tags": ["LoRA", "PEFT"]
+        },
+        {
+          "id": "3",
+          "title": "LLM Fine-Tuning Pipeline on AWS",
+          "description": "Distributed fine-tuning pipeline with SageMaker, spot instances, and MLflow tracking.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/llm-fine-tuning-aws",
+          "tags": ["AWS", "SageMaker", "MLflow"]
+        }
+      ]
+    },
+    "computerVision": {
+      "title": "👁️ Computer Vision Projects",
+      "description": "Computer vision and image processing applications",
+      "projects": [
+        {
+          "id": "1",
+          "title": "Multimodal AI Assistant (text + images)",
+          "description": "Vision + text chatbot for scene understanding and Q&A.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/multimodal-ai-assistant",
+          "tags": ["CLIP", "GPT-4V"]
+        },
+        {
+          "id": "2",
+          "title": "Multimodal Facial Landmark Detection",
+          "description": "3D face modeling using dual-input ResNet50 (RGB+Depth).",
+          "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Facial_Points.png",
+          "url": "https://github.com/rchhabra13/multimodal-facial-landmark-detection",
+          "tags": ["PyTorch", "TFLite"]
+        },
+        {
+          "id": "3",
+          "title": "Real-time Emotion Detection",
+          "description": "MobileNetV3 with attention; classifies 7 emotions in real time.",
+          "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Emotion_Classification.png",
+          "url": "https://github.com/rchhabra13/real-time-emotion-detection",
+          "tags": ["PyTorch", "Flutter", "AWS"]
+        },
+        {
+          "id": "4",
+          "title": "Advanced Facial Recognition",
+          "description": "Secure face authentication with liveness detection.",
+          "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/7/74/Face_recognition.jpg",
+          "url": "https://github.com/rchhabra13/advanced-facial-recognition",
+          "tags": ["FaceNet", "AWS Lambda"]
+        },
+        {
+          "id": "5",
+          "title": "Real-time Fire Detection",
+          "description": "CNN-based fire detection system from live video.",
+          "imageSrc": "https://miro.medium.com/v2/da:true/resize:fit:800/1*HVm63Me_kPRNy0vxekCabw.gif",
+          "url": "https://github.com/rchhabra13/real-time-fire-detection",
+          "tags": ["OpenCV", "PyTorch"]
+        },
+        {
+          "id": "6",
+          "title": "Handwritten Digit Recognition",
+          "description": "CNN on MNIST with 98%+ accuracy, optimized for mobile inference.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/handwritten-digit-recognition",
+          "tags": ["CNN", "MNIST", "Mobile"]
+        }
+      ]
+    },
+    "nlp": {
+      "title": "🗣️ NLP / Document Intelligence",
+      "description": "Natural language processing and document analysis systems",
+      "projects": [
+        {
+          "id": "1",
+          "title": "Automated Contract Summarizer",
+          "description": "LLM + OCR pipeline to extract and summarize risk clauses.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/automated-contract-summarizer",
+          "tags": ["GPT", "AWS Textract"]
+        },
+        {
+          "id": "2",
+          "title": "Personalized Learning Path Generator",
+          "description": "Uses RL + knowledge graphs to design adaptive study plans.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/personalized-learning-path-generator",
+          "tags": ["RL", "Knowledge Graphs"]
+        },
+        {
+          "id": "3",
+          "title": "Document-to-Database Pipeline for Compliance",
+          "description": "Auto-extracts structured data from regulatory filings.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/regulatory-docs-to-database-pipeline",
+          "tags": ["OCR", "LLM", "Compliance"]
+        },
+        {
+          "id": "4",
+          "title": "Hate Speech Detector",
+          "description": "DistilBERT-based model for detecting offensive language.",
+          "imageSrc": "https://moqod.com/static/img/hate-speech-01.min.png",
+          "url": "https://github.com/rchhabra13/hate-speech-detector",
+          "tags": ["DistilBERT", "NLP"]
+        },
+        {
+          "id": "5",
+          "title": "Fake News Detection",
+          "description": "ML classifier to detect misinformation.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/fake-news-detection",
+          "tags": ["ML", "Classification"]
+        },
+        {
+          "id": "6",
+          "title": "Sentiment Analysis",
+          "description": "Emotion detection from text data for media monitoring.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/sentiment-analysis",
+          "tags": ["Sentiment", "NLP"]
+        },
+        {
+          "id": "7",
+          "title": "Movie Review Sentiment Analysis",
+          "description": "Naive Bayes + TF-IDF classifier with Flask UI.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/movie-review-sentiment-analysis",
+          "tags": ["Naive Bayes", "TF-IDF", "Flask"]
+        },
+        {
+          "id": "8",
+          "title": "Phishing Website Detection",
+          "description": "ML system to detect phishing URLs.",
+          "imageSrc": "https://elie.net/_astro/what-phishing-sites-look-like-study.B0g30Z1f_2souu0.jpg",
+          "url": "https://github.com/rchhabra13/phishing-website-detection",
+          "tags": ["ML", "Security"]
+        }
+      ]
+    },
+    "mlops": {
+      "title": "🏗️ MLOps, Infra & Cloud Systems",
+      "description": "Machine learning operations and cloud infrastructure",
+      "projects": [
+        {
+          "id": "1",
+          "title": "End-to-End MLOps Pipeline",
+          "description": "Automated ML pipeline with Docker, Kubernetes, and Airflow.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/end-to-end-mlops-pipeline",
+          "tags": ["Docker", "Kubernetes", "Airflow"]
+        },
+        {
+          "id": "2",
+          "title": "Local Kubernetes LLM Inference",
+          "description": "Edge inference for LLMs on local Kubernetes clusters.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/local-k8s-llm-inference",
+          "tags": ["Kubernetes", "LLM", "Edge"]
+        },
+        {
+          "id": "3",
+          "title": "Serverless Contact Form",
+          "description": "AWS Lambda-based serverless contact submission system.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/serverless-contact-form",
+          "tags": ["AWS Lambda", "Serverless"]
+        },
+        {
+          "id": "4",
+          "title": "Image Upload & Compression",
+          "description": "Lambda-based automatic image compression and storage pipeline.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/image-upload-compression",
+          "tags": ["AWS Lambda", "Image Processing"]
+        }
+      ]
+    },
+    "dataScience": {
+      "title": "📊 Data Science & Visualization",
+      "description": "Data analysis and visualization projects",
+      "projects": [
+        {
+          "id": "1",
+          "title": "3D Road Network Visualization (California)",
+          "description": "Big data visualization of CA road networks in Google Earth.",
+          "imageSrc": "https://www.guideoftheworld.com/wp-content/uploads/2023/11/California-Road-Map-scaled.jpg",
+          "url": "https://github.com/rchhabra13/3d-road-network-visualization",
+          "tags": ["Big Data", "Visualization", "Google Earth"]
+        },
+        {
+          "id": "2",
+          "title": "NYC Collision Analysis",
+          "description": "Spatial data analytics on NYC taxi collisions.",
+          "imageSrc": "https://publish.purewow.net/wp-content/uploads/sites/2/2018/05/nyc-yellow-taxi-in-times-square-hero.jpg",
+          "url": "https://github.com/rchhabra13/nyc-collision-analysis",
+          "tags": ["Spatial Data", "Analytics"]
+        },
+        {
+          "id": "3",
+          "title": "Titanic Survival Prediction",
+          "description": "Binary classification on Titanic dataset.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/titanic-survival-prediction",
+          "tags": ["Binary Classification", "ML"]
+        },
+        {
+          "id": "4",
+          "title": "House Price Prediction",
+          "description": "Regression model with interactive Streamlit dashboard.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/house-price-prediction",
+          "tags": ["Regression", "Streamlit"]
+        }
+      ]
+    },
+    "softwareApps": {
+      "title": "📱 Software & Mobile Apps",
+      "description": "Web and mobile applications",
+      "projects": [
+        {
+          "id": "1",
+          "title": "I-Manager",
+          "description": "Football team management app for players, matches, and analytics.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/i-manager",
+          "tags": ["Flutter", "Firebase"]
+        },
+        {
+          "id": "2",
+          "title": "Panda",
+          "description": "AI-powered dating app with real-time matching and chat.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/panda",
+          "tags": ["Flutter", "Node.js"]
+        },
+        {
+          "id": "3",
+          "title": "Paradisseo",
+          "description": "Travel app with smart itinerary recommendations and trip planning.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/paradisseo",
+          "tags": ["Flutter", "Google Maps API"]
+        },
+        {
+          "id": "4",
+          "title": "Entrezz",
+          "description": "Networking and business platform for professionals with real-time chat and profiles.",
+          "imageSrc": "/images/back.svg",
+          "url": "https://github.com/rchhabra13/entrezz",
+          "tags": ["Flutter", "Firebase", "Node.js"]
+        }
+      ]
+    }
+  },
   "services": [
     {
       "id": "1",
