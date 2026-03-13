@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "title": "Rishi Chhabra — ML Engineer | GenAI • RAG • MLOps",
+    "description": "Portfolio of Rishi Chhabra. Machine Learning Engineer specializing in GenAI, RAG, and MLOps."
+  },
+  "hero": {
+    "name": "RISHI\nCHHABRA",
+    "tagline": "Machine Learning Engineer  •  GenAI • RAG • MLOps",
+    "bio": "Built production RAG systems at Ariesview | M.S. in Machine Learning at Stevens Institute of Technology",
+    "email": "rishi.chhabra@outlook.com",
+    "resumeUrl": "Rishi_Chhabra_Resume.pdf",
+    "photoAlt": "Rishi Chhabra",
+    "pills": [
+      "Rishi Chhabra",
+      "Open to opportunities",
+      "📍 New York, NY"
+    ]
+  },
+  "about": {
+    "sectionTitle": "ABOUT_ME",
+    "cards": [
+      {
+        "emoji": "🎓",
+        "title": "Education",
+        "detail": "Stevens Institute of Technology",
+        "subtitle": "M.S. in Machine Learning",
+        "meta": [
+          "Hoboken, NJ · 2024 – 2026",
+          "B.Tech. in Computer Science · Central University of Haryana · 2020 – 2024"
+        ]
+      },
+      {
+        "emoji": "💼",
+        "title": "Current Role",
+        "detail": "Ariesview",
+        "subtitle": "AI Engineer Intern",
+        "meta": [
+          "RAG & AI Infrastructure",
+          "Boston, MA · Sep 2025 – Present"
+        ]
+      },
+      {
+        "emoji": "🎯",
+        "title": "Focus Areas",
+        "detail": "GenAI · RAG · MLOps",
+        "subtitle": "Production ML Systems",
+        "meta": [
+          "AWS · Kubernetes · Vector DBs"
+        ]
+      }
+    ],
+    "summary": "I'm a builder who thrives in early-stage, ambiguous environments. I like owning problems end-to-end—going from a vague idea to something real that people actually use. Speed, judgment, and quality all matter.",
+    "principles": [
+      {
+        "emoji": "💡",
+        "title": "Core Principle",
+        "text": "\"With AI, we can not just get work done, but also make it <strong>testable and observable</strong>. That combination is magical.\""
+      },
+      {
+        "emoji": "🎯",
+        "title": "What Drives Me",
+        "text": "End-to-end ownership · Research-to-production · Building reliable AI systems · Developer experience over hype"
+      }
+    ]
+  },
+  "skills": {
+    "items": [
+      {
+        "label": "PYTORCH"
+      },
+      {
+        "label": "TENSORFLOW",
+        "variant": "pink"
+      },
+      {
+        "label": "LANGCHAIN"
+      },
+      {
+        "label": "RAG",
+        "variant": "cyan"
+      },
+      {
+        "label": "LLMS"
+      },
+      {
+        "label": "VLLM",
+        "variant": "yellow"
+      },
+      {
+        "label": "LORA / QLORA"
+      },
+      {
+        "label": "TRANSFORMERS",
+        "variant": "pink"
+      },
+      {
+        "label": "WEAVIATE"
+      },
+      {
+        "label": "PINECONE",
+        "variant": "cyan"
+      },
+      {
+        "label": "CHROMADB"
+      },
+      {
+        "label": "AWS SAGEMAKER",
+        "variant": "yellow"
+      },
+      {
+        "label": "LAMBDA"
+      },
+      {
+        "label": "DOCKER"
+      },
+      {
+        "label": "KUBERNETES",
+        "variant": "pink"
+      },
+      {
+        "label": "CI/CD"
+      },
+      {
+        "label": "TERRAFORM",
+        "variant": "cyan"
+      },
+      {
+        "label": "MLFLOW"
+      },
+      {
+        "label": "PYTHON",
+        "variant": "yellow"
+      },
+      {
+        "label": "C++"
+      },
+      {
+        "label": "SQL",
+        "variant": "pink"
+      },
+      {
+        "label": "PROMPT ENGINEERING"
+      },
+      {
+        "label": "NLP",
+        "variant": "cyan"
+      },
+      {
+        "label": "COMPUTER VISION"
+      },
+      {
+        "label": "GRPC",
+        "variant": "yellow"
+      },
+      {
+        "label": "NGINX"
+      },
+      {
+        "label": "WEIGHTS & BIASES",
+        "variant": "pink"
+      },
+      {
+        "label": "TENSORBOARD"
+      }
+    ]
+  },
+  "projects": {
+    "sectionTitle": "WORK_I'M_PROUD_OF",
+    "items": [
+      {
+        "icon": "⚙️",
+        "title": "End-to-End MLOps Pipeline",
+        "stack": "Academic / Production · AWS SageMaker · Kubernetes · MLflow",
+        "description": "Automated ML lifecycle deployment using <strong>containerized workflows</strong> and Kubernetes orchestration. Integrated MLflow for experiment tracking, reducing manual intervention by <strong>80%</strong> and time-to-production by <strong>60%</strong>.",
+        "tags": [
+          "MLOPS",
+          "AWS",
+          "PRODUCTION"
+        ]
+      },
+      {
+        "icon": "🧠",
+        "title": "RAG-Based Q&A System",
+        "stack": "Python · LangChain · Pinecone · OpenAI",
+        "description": "Engineered RAG system processing <strong>10,000+ documents</strong>, achieving 85% accuracy and <strong>&lt;2s response latency</strong>. Implemented hybrid search with Pinecone for balanced keyword/semantic performance.",
+        "tags": [
+          "RAG",
+          "LANGCHAIN",
+          "VECTOR DB"
+        ]
+      },
+      {
+        "icon": "🔍",
+        "title": "Semantic Search Engine",
+        "stack": "Weaviate · BERT · FastAPI",
+        "description": "Developed semantic search platform for <strong>50,000+ docs</strong> with Weaviate, improving relevance scores by <strong>70%</strong>. High-performance REST APIs for client dashboards with <strong>99.5% uptime</strong>.",
+        "tags": [
+          "SEARCH",
+          "WEAVIATE",
+          "BERT"
+        ]
+      },
+      {
+        "icon": "🖼️",
+        "title": "Multimodal AI Assistant",
+        "stack": "PyTorch · Transformers (CLIP) · AWS",
+        "description": "Deployed Visual Q&A chatbot using <strong>CLIP models</strong>, achieving <strong>95% accuracy</strong> on custom validation. Scaled to 1,000+ daily interactions via Docker + AWS EC2 deployment.",
+        "tags": [
+          "CV",
+          "NLP",
+          "CLIP"
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "sectionTitle": "WORK_EXPERIENCE",
+    "items": [
+      {
+        "company": "Ariesview",
+        "role": "AI Engineer Intern",
+        "location": "Boston, MA",
+        "dates": "Sep 2025 – Present",
+        "sections": [
+          {
+            "title": "🤖 RAG & AI Infrastructure",
+            "bullets": [
+              "Architecting <strong>RAG system</strong> for internal document processing, integrating <strong>Weaviate</strong> for hybrid search",
+              "Implementing <strong>semantic chunking and re-ranking</strong> algorithms, improving accuracy by <strong>40%</strong> and reducing hallucinations",
+              "Optimizing <strong>CI/CD pipelines</strong> and backend caching using <strong>Redis/Valkey</strong>, cutting deployment time by <strong>30%</strong>"
+            ]
+          }
+        ],
+        "techStack": "Weaviate, RAG Pipelines, Redis/Valkey, CI/CD"
+      },
+      {
+        "company": "Incuwise",
+        "role": "Software Development Engineer I",
+        "location": "Delhi, India",
+        "dates": "Feb 2024 – Aug 2024",
+        "sections": [
+          {
+            "title": "📱 Full-Stack & Cloud",
+            "bullets": [
+              "Migrated legacy infrastructure to <strong>serverless AWS architecture</strong>, improving scalability by <strong>60%</strong> and ensuring <strong>99.9% uptime</strong>",
+              "Engineered high-throughput backend services using <strong>Node.js/Flutter</strong>, reducing API response time by <strong>15%</strong> for 10,000+ users",
+              "Launched <strong>4 production applications</strong> with optimized high-concurrency performance, improving engagement by <strong>25%</strong>"
+            ]
+          }
+        ],
+        "techStack": "AWS, Node.js, Flutter, Serverless"
+      }
+    ]
+  },
+  "education": {
+    "sectionTitle": "EDUCATION",
+    "items": [
+      {
+        "school": "Stevens Institute of Technology",
+        "degree": "M.S. in Machine Learning",
+        "meta": "Hoboken, NJ · 2024 – 2026"
+      },
+      {
+        "school": "Central University of Haryana",
+        "degree": "B.Tech. in Computer Science",
+        "meta": "India · 2020 – 2024"
+      }
+    ]
+  },
+  "certifications": {
+    "sectionTitle": "CERTIFICATIONS",
+    "items": [
+      "AWS Certified Machine Learning Engineer – Associate",
+      "Databricks Certified Developer for Apache Spark – Associate",
+      "AWS Certified Developer – Associate"
+    ]
+  },
+  "contact": {
+    "sectionTitle": "GET_IN_TOUCH",
+    "heading": "Let's build something together.",
+    "subheading": "Whether you have a project idea, job opportunity, or just want to connect — I'd love to hear from you.",
+    "formAction": "https://formsubmit.co/rishi.chhabra@outlook.com",
+    "links": [
+      {
+        "icon": "💼",
+        "label": "LinkedIn",
+        "value": "@rchhabra1",
+        "href": "https://www.linkedin.com/in/rchhabra1/",
+        "iconBg": "cyan"
+      },
+      {
+        "icon": "💻",
+        "label": "GitHub",
+        "value": "@rchhabra13",
+        "href": "https://github.com/rchhabra13",
+        "iconBg": "yellow"
+      },
+      {
+        "icon": "📧",
+        "label": "Email",
+        "value": "rishi.chhabra@outlook.com",
+        "href": "mailto:rishi.chhabra@outlook.com",
+        "iconBg": "pink"
+      },
+      {
+        "icon": "📄",
+        "label": "Resume",
+        "value": "Download PDF",
+        "href": "Rishi_Chhabra_Resume.pdf",
+        "iconBg": "lime",
+        "download": true
+      }
+    ]
+  },
+  "footer": {
+    "links": [
+      {
+        "label": "Email",
+        "href": "mailto:rishi.chhabra@outlook.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/rchhabra1/"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/rchhabra13"
+      },
+      {
+        "label": "Resume",
+        "href": "Rishi_Chhabra_Resume.pdf"
+      }
+    ],
+    "copy": "© 2026 Rishi Chhabra • New York, NY"
+  },
+  "blog": {
+    "sectionTitle": "BLOG",
+    "items": [
+      {
+        "title": "Anthropic Releases Claude Opus 4.6: Key Upgrades for Agentic Work",
+        "date": "2026-02-05",
+        "excerpt": "Claude Opus 4.6 pushes agentic AI forward with real production gains—1M token context, stronger long-horizon tasks, and observability that matters.",
+        "slug": "claude-opus-4-6-agentic-upgrades",
+        "tags": [
+          "Claude",
+          "AgenticAI",
+          "ProductionAI"
+        ],
+        "body": "<p>Claude Opus 4.6 (Feb 5, 2026) pushes agentic AI forward with real production gains. Here's what delivered impact.</p><h3>1M Token Context Window (Beta)</h3><p>First for Opus-class. Handles ~750k words without dilution. Retrieval jumps dramatically (76% on MRCR v2 vs predecessor's 18.5%). Align context size to actual usable length—avoid rot.</p><h3>Stronger Long-Horizon & Multi-Agent Tasks</h3><p>Plans better, stays on-task longer, sustains complex projects. Agent teams divide work (research preview). Reduced back-and-forth; ideal for multi-step knowledge workflows.</p><h3>Coding & Knowledge Work Gains</h3><p>Top scores on Terminal-Bench 2.0, GDPval-AA (beats GPT-5.2 by ~144 Elo), BrowseComp. Better debugging, code review, financial/legal tasks. Self-correction cuts errors.</p><h3>Observability Tip</h3><p>Log agent steps, tool calls, outputs from day one. Trace failures back to context loss or bad planning—critical when agents run autonomously.</p>"
+      },
+      {
+        "title": "OpenAI Launches GPT-5.3-Codex: Agentic Coding Breakthrough",
+        "date": "2026-02-05",
+        "excerpt": "GPT-5.3-Codex combines top coding and reasoning in one fast model. Production lessons that mattered.",
+        "slug": "gpt-5-3-codex-agentic-coding",
+        "tags": [
+          "CodingAI",
+          "Agentic",
+          "OpenAI"
+        ],
+        "body": "<p>GPT-5.3-Codex (Feb 5, 2026) combines top coding + reasoning in one fast model. Production lessons that mattered.</p><h3>25% Faster Inference + Long-Task Strength</h3><p>Handles research, tool-use, extended execution without context drop. Interact mid-task like a colleague. Latency stays low on complex workflows.</p><h3>Agentic Coding Leadership</h3><p>56.8% SWE-Bench Pro, 77.3% Terminal-Bench 2.0. Builds games, sites, finds vulnerabilities autonomously. Self-improvement loop (helped build itself).</p><h3>Professional Breadth</h3><p>Spans 44 occupations. Production-ready code + knowledge tasks. Sandboxed execution adds safety.</p><h3>Deployment Note</h3><p>Start with paid ChatGPT/Codex surfaces. Log interactions early—debug steering fails or tool misuse fast.</p>"
+      },
+      {
+        "title": "OpenAI Introduces Frontier: Enterprise Agent Management Platform",
+        "date": "2026-02-05",
+        "excerpt": "Frontier turns AI agents into managed co-workers for enterprises. What works at scale.",
+        "slug": "openai-frontier-enterprise-agents",
+        "tags": [
+          "EnterpriseAI",
+          "AIAgents",
+          "Frontier"
+        ],
+        "body": "<p>Frontier (Feb 5, 2026) turns AI agents into managed \"co-workers\" for enterprises. What works at scale.</p><h3>Build-Deploy-Manage Pipeline</h3><p>End-to-end: create agents (OpenAI or third-party), integrate systems, govern at scale. Shared context across agents.</p><h3>Enterprise Focus</h3><p>Early customers (HP, Oracle, Uber, etc.). Treats agents like employees—monitoring, security, compliance built-in.</p><h3>Open Platform Advantage</h3><p>Mix OpenAI, Google, Anthropic agents. Avoids lock-in; accelerates adoption.</p><h3>Day-One Practice</h3><p>Instrument everything: agent logs, decisions, outcomes. When agents fail in prod, trace back to config or data issues instantly.</p>"
+      },
+      {
+        "title": "Snowflake + OpenAI $200M Partnership: AI-Native Data Insights",
+        "date": "2026-02-02",
+        "excerpt": "$200M multi-year deal embeds OpenAI models directly in Snowflake. Key production wins.",
+        "slug": "snowflake-openai-partnership",
+        "tags": [
+          "Snowflake",
+          "EnterpriseAI",
+          "DataAI"
+        ],
+        "body": "<p>$200M multi-year deal (Feb 2, 2026) embeds OpenAI models directly in Snowflake. Key production wins.</p><h3>Governed Agents in Data Cloud</h3><p>Use GPT models via Cortex AI + Snowflake Intelligence. Natural-language queries → auto analysis, no code.</p><h3>Multimodal & Grounded Insights</h3><p>Agents pull enterprise data securely. Multimodal support boosts reports, visualizations.</p><h3>Scale & Governance</h3><p>First-party integration (not via cloud proxy). Controls access, lineage—meets compliance needs.</p><h3>Implementation Tip</h3><p>Log queries, retrieved data, model outputs. Trace hallucinations or bad insights to source data quality or prompt gaps.</p>"
+      },
+      {
+        "title": "Anthropic Expands Cowork: Custom Agentic Plug-Ins for Departments",
+        "date": "2026-02-01",
+        "excerpt": "Cowork plug-ins make Claude department-specific. Practical takeaways for customizable workflows.",
+        "slug": "anthropic-cowork-plugins",
+        "tags": [
+          "Cowork",
+          "AgenticPlugins",
+          "ProductivityAI"
+        ],
+        "body": "<p>Cowork plug-ins update (late Jan/early Feb 2026) makes Claude department-specific. Practical takeaways.</p><h3>Customizable Workflows</h3><p>Define tools, data sources, commands per role (sales, legal, marketing). 11 open-source starters; easy to build/share.</p><h3>Agentic Automation</h3><p>Non-coders get specialist agents. Slash commands + sub-agents handle repetitive flows.</p><h3>Enterprise Efficiency</h3><p>Reduces manual oversight. Integrates third-party tools (Figma, Asana) directly in Claude.</p><h3>Observability Must</h3><p>Track plug-in triggers, agent actions, results. When department workflows break, debug config or data access fast.</p>"
+      }
+    ]
+  }
+}
